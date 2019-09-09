@@ -1,1 +1,20 @@
-<p>graphic works!</p>
+<div class="row">
+  <ng-container *ngFor="let graphic of graphics">
+    <div class="col-6">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">{{ graphic.legenda }}</h4>
+          <div>
+            <div>
+              <app-doughnut-graphic
+                [doughnutChartLabels]="graphic.labels"
+                [doughnutChartData]="graphic.data"
+                [doughnutChartType]="graphic.type"
+              ></app-doughnut-graphic>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</div>
