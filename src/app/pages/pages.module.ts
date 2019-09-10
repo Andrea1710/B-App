@@ -16,6 +16,7 @@ import {ProgressComponent} from './progress/progress.component';
 import {GraphicComponent} from './graphic/graphic.component';
 import {BoosterComponent} from '../components/booster/booster.component';
 import {DoughnutGraphicComponent} from './../components/doughnut-graphic/doughnut-graphic.component';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 @NgModule({
   imports: [
@@ -40,6 +41,7 @@ import {DoughnutGraphicComponent} from './../components/doughnut-graphic/doughnu
     GraphicComponent,
     BoosterComponent,
     DoughnutGraphicComponent,
+    AccountSettingsComponent,
   ],
   providers: [],
 })
